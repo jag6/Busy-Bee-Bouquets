@@ -6,15 +6,17 @@
     <!-- Title -->
     <title>Home - Busy Bee Bouqets</title>
     <!-- CSP 
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; font-src https://fonts.gstatic.com; style-src 'self' https://fonts.googleapis.com; script-src 'self'; base-uri 'none'; frame-src 'none'; form-action 'none'; child-src 'none';">-->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; font-src https://fonts.gstatic.com https://cdnjs.cloudflare.com; style-src 'self' https://fonts.googleapis.com https://cdnjs.cloudflare.com; script-src 'self'; base-uri 'none'; frame-src 'none'; form-action 'none'; child-src 'none';">-->
     <!-- Preload -->
-    <link rel="preload" href="images/.webp" as="image"> 
-    <link rel="preload" as="script" href="components/header.js">
+    <link rel="preload" href="/images/banner/aisle-flowers-banner.webp" as="image">
+    <link rel="preload" as="script" href="/components/header.js">
+    <link rel="preload" as="script" href="/components/banner.js">
     <!-- CSS and Fonts -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/home.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Libre+Bodoni:wght@400;700&family=Maven+Pro:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Libre+Bodoni:ital,wght@0,400;0,700;1,500&family=Maven+Pro:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <!-- Favicon -->
     <link rel="shortcut icon" href="/favicon/favicon.ico" type="image/x-icon">
@@ -35,28 +37,92 @@
     <!-- Twitter Metadata -->
     <meta name="twitter:title" content="Busy Bee Bouqets - Wedding Florist">
     <meta property="twitter:description" content="">
-    <meta name="twitter:image" content="https://busybeebouquets.com/images/aisle-flowers.webp">
+    <meta name="twitter:image" content="https://busybeebouquets.com/images/meta_image/aisle-flowers.webp">
     <meta name="twitter:card" content="summary_large_image">
     <!-- Other Social Media Metadata-->
-    <meta property="og:image" content="https://busybeebouquets.com/images/aisle-flowers.webp">
+    <meta property="og:image" content="https://busybeebouquets.com/images/meta_image/aisle-flowers.webp">
     <meta property="og:description" content="">
     <meta property="og:title" content="Busy Bee Bouqets - Wedding Florist">
     <meta property="og:locale" content="en_US"/>
     <meta property="og:type" content="website"/>
     <meta property="og:url" content="https://busybeebouquets.com"/>
     <!-- Components -->
-    <script src="components/header.js" type="text/javascript" defer></script>
-    <script src="components/footer.js" type="text/javascript" defer></script>
-    <script src="components/contact.js" type="text/javascript" defer></script>
+    <script src="/components/header.js" type="text/javascript" defer></script>
+    <script src="/components/banner.js" type="text/javascript" defer></script>
+    <script src="/components/footer.js" type="text/javascript" defer></script>
+    <script src="/components/contact.js" type="text/javascript" defer></script>
+    <script src="/components/buttonAndPinkContact.js" type="text/javascript" defer></script>
     <!-- Scripts -->
-    <script src="scripts/animation.js" type="text/javascript" defer></script>
+    <script type="module" src="/scripts/home.js" type="text/javascript" defer></script>
+    <script src="/scripts/animation.js" type="text/javascript" defer></script>
+    
 </head>
 <body>
     <header-component class="header"></header-component>
-    <main></main>
-
-   
-
+    <main>
+        <!-- Banner -->
+        <banner-component id="home-banner" class="home-banner" imageSrc="aisle-flowers" imageAlt="flowers on wedding aisle" text1="Busy Bee Bouquets" text2="floral creations for your special event"></banner-component>
+        <div class="pink-border"></div>
+        <!-- Wedding Floristry -->
+        <section class="wedding-floristry-container container">
+            <section id="wedding-floristry" class="container-header">
+                <h2>WEDDING FLORISTRY</h2>
+            </section>
+            <div class="wedding-floristry-img-text">
+                <div class="wedding-floristry-img-container">
+                    <div class="wedding-floristry-img">
+                        <div>
+                            <img class="js-scroll slide-left" src="/images/wedding-floristry-img.webp" alt="a bride in a pink dress holding a Busy Bee Bouquets' bouquet">
+                        </div>
+                    </div>
+                </div>
+                <div class="wedding-floristry-text js-scroll slide-right">
+                    <p>We offer a full-service experience for those seeking a trusted floral expert. Known for creating stunning arrangements, Madi loves working closely with those desiring to create a gorgeous flora environment with timeless flower moments to be forever treasured.</p>
+                </div>
+            </div>
+        </section>
+        <div class="pink-border"></div>
+        <!-- Our Process -->
+        <section class="our-process container">
+            <section class="container-header">
+                <h2>OUR PROCESS</h2>
+            </section>
+            <section id="process-steps" class="process-steps"></section>
+        </section>
+        <!-- Gallery -->
+        <section class="gallery container">
+            <section class="container-header">
+                <h2>GALLERY</h2>
+            </section>
+            <div id="gallery-images" class="gallery-images"></div>
+            <button-component link="portfolio" text="VIEW MORE"></button-component>
+        </section>
+        <!-- Behind the Petals -->
+        <section class="behind-the-petals container">
+            <div class="btp-img js-scroll slide-left">
+                <img src="/images/madi.png" alt="Busy Bee Bouquets Owner Madi Blasingame">
+            </div>
+            <section class="btp-text">
+                <section>
+                    <section><h2>BEHIND THE PETALS</h2></section>
+                    <section><h3>-MADI BLASINGAME-</h3></section>
+                </section>
+                <div>
+                    <p>I am a California girl from the Central Coast, recently relocated to the Hudson Valley in New York state. Not long after getting married, I followed my heart and dove head first into pursing my dream of being a wedding florist.</p>
+                </div>
+                <button-component link="about" text="ABOUT ME" class="js-scroll fade-in"></button-component>
+            </section>
+        </section>
+       <!-- FAQ -->
+       <section class="faq container">
+            <section class="container-header">
+                <h2>FAQ</h2>
+            </section>
+            <section id="faq-qa" class="faq-qa"></section>
+       </section>
+       <!-- Contact -->
+       <contact-component class="container" text1="We’re looking forward to hearing from you!" text2="We can’t wait to make your wedding dreams a reality!"></contact-component>
+    </main>
     <footer-component class="footer"></footer-component>
 </body>
 </html>
