@@ -28,7 +28,7 @@ portfolioImages.forEach((image) => {
         //view clicked image
         const index = [...image.parentElement.children].indexOf(image);
         n = index + 1;
-        showSlides(slideIndex = n);
+        showImages(imageIndex = n);
     });
 });
 
@@ -39,24 +39,24 @@ document.getElementById('close-modal').addEventListener('click', () => {
 });
 
 //cycle through modal
-const showSlides = (n) => {
-    let slides = document.querySelectorAll('.modal-img');
-    if(n > slides.length) { slideIndex = 1 }
-    if(n < 1) { slideIndex = slides.length }
-    slides.forEach((slide) => {
-        slide.style.display = 'none';
+const showImages = (n) => {
+    let images = document.querySelectorAll('.modal-img');
+    if(n > images.length) { imageIndex = 1 }
+    if(n < 1) { imageIndex = images.length }
+    images.forEach((image) => {
+        image.style.display = 'none';
     }); 
-    slides[slideIndex - 1].style.display = 'flex';
+    images[imageIndex - 1].style.display = 'flex';
 };
 
-let slideIndex = 1;
-showSlides(slideIndex);
+let imageIndex = 1;
+showImages(imageIndex);
 
 document.getElementById('next-modal').addEventListener('click', (n) => {
     n = 1;
-    showSlides(slideIndex += n);
+    showImages(imageIndex += n);
 });
 document.getElementById('prev-modal').addEventListener('click', (n) => {
     n =-1;
-    showSlides(slideIndex += n)
+    showImages(imageIndex += n)
 });
