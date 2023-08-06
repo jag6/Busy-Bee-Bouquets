@@ -24,7 +24,7 @@ export const galleryData = [
     'dio-luxury-wedding-photography-176-1',
     'dio-luxury-wedding-photography-162-1',
     '1-528-1'
-]
+];
 
 export const faqData = [
     {
@@ -36,4 +36,4 @@ export const faqData = [
     {
         imageSrc: '3', question: 'Do you do elopements for micro weddings?', answer: 'We can take smaller “a la carte” orders based on availability. Only as early as two-months before your wedding may you inquire.'
     }, 
-]
+];

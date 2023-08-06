@@ -74,9 +74,9 @@ customElements.define('nav-component', class extends HTMLElement {
         this.innerHTML = `
             <ul class="page-links">
                 <li><a href="/">HOME</a></li>
-                <li><a href="/about.html">ABOUT</a></li>
-                <li><a href="/portfolio.html">PORTFOLIO</a></li>
-                <li><a href="/contact.html">CONTACT</a></li>
+                <li><a href="/about">ABOUT</a></li>
+                <li><a href="/portfolio">PORTFOLIO</a></li>
+                <li><a href="/contact">CONTACT</a></li>
             </ul>
         `;
     }
