@@ -494,8 +494,8 @@ footer a { font-size: 14px; line-height: 32px; color: #B0916A; }
     top: 0; left: 0;
     width: 100%; height: 100%;
     overflow: auto;
-    background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.5);
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 .modal-images {
     margin: auto;
@@ -534,9 +534,12 @@ footer a { font-size: 14px; line-height: 32px; color: #B0916A; }
     display: flex; margin: 0 auto; justify-content: center;
     font-weight: 700;
     border-radius: 5px;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
 }
 .next-modal { right: 0; }
-.prev-modal:hover, .next-modal:hover { background-color: #666; color: #fff; }
+.prev-modal:hover, .next-modal:hover { opacity: .5; }
 
 
 @media only screen and (max-width: 576px) {
@@ -551,7 +554,7 @@ footer a { font-size: 14px; line-height: 32px; color: #B0916A; }
     display: flex; flex-flow: row wrap;
     max-width: 1400px;
     padding: 0 5%;
-    margin: 0 auto; margin-bottom: 4rem;
+    margin: 0 auto;
     justify-content: space-between; align-items: center;
 }
 .contact-links, .contact-text { width: 50%; }
@@ -595,3 +598,11 @@ footer a { font-size: 14px; line-height: 32px; color: #B0916A; }
 .privacy-policy-content h2 { margin-bottom: 1rem; text-align: left; font-size: 32px; line-height: 64px; }
 .privacy-policy-content p, .privacy-policy-content ul li { font-size: 20px; line-height: 40px; margin-bottom: 1rem; }
 .privacy-policy-content ul { margin-left: 5%; margin-bottom: 1rem; }
+
+
+/*404*/
+
+.sorry-banner { margin: 0 auto; }
+.sorry-banner .banner-img { height: 672px; width: auto; min-height: none;}
+.sorry-banner h1, .sorry-banner h2 { color: #fff; }
+.sorry-text p { font-size: 24px; line-height: 40px; text-align: center; }
