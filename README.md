@@ -1,0 +1,1 @@
+This project is intentionally without a license. All non-owners of this repository have no permission to use, modify, or share it's contents for any purpose. Per the GitHub Terms of Service, the viewing and forking of this repository is allowed.
