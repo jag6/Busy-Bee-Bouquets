@@ -360,6 +360,18 @@ footer a { font-size: 14px; line-height: 32px; color: #B0916A; }
 .pink-contact a { background-color: #fff; color: #B0916A;}
 
 
+/*VIDEO*/
+.video { display: flex; max-width: 2000px; margin: 0 auto; justify-content: center; }
+audio::-webkit-media-controls-timeline,
+video::-webkit-media-controls-timeline {
+    display: none;
+}
+audio::-webkit-media-controls,
+video::-webkit-media-controls {
+    display: none;
+}
+
+
 /*ANIMATIONS*/
 
 .js-scroll { opacity: 0; transition: opacity 500ms; }
@@ -581,7 +593,7 @@ footer a { font-size: 14px; line-height: 32px; color: #B0916A; }
 
 /*PRIVACY POLICY*/
 
-.privacy-policy-container { 
+.privacy-policy-container-bbb { 
     max-width: 1200px; 
     display: flex; flex-direction: column;
     margin: 0 auto;
