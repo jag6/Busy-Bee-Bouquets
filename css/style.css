@@ -306,6 +306,8 @@ footer a { font-size: 14px; line-height: 32px; color: #B0916A; }
 }
 @media only screen and (max-width: 576px) {
     .banner-text { height: 672px; }
+    .home-banner h1 { font-size: 32px; line-height: 64px; }
+    .home-banner h2 { font-size: 20px; line-height: 40px; }
     .about-banner .banner-text { left: 0; }
     .about-banner h1, .about-banner h2 { color: #fff; }
     .portfolio-banner .banner-text { top: 25%;  right: 0; }
