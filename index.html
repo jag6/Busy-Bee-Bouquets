@@ -8,11 +8,12 @@
     <!-- Title -->
     <title>Home - Busy Bee Bouqets</title>
     <!-- CSP -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; font-src https://fonts.gstatic.com https://cdnjs.cloudflare.com; style-src 'self' https://fonts.googleapis.com https://cdnjs.cloudflare.com; script-src 'self'; base-uri 'none'; frame-src 'none'; form-action 'none'; child-src 'none';">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; font-src https://fonts.gstatic.com https://cdnjs.cloudflare.com; style-src 'self' https://fonts.googleapis.com https://cdnjs.cloudflare.com; script-src 'self'; base-uri 'none'; frame-src 'none'; media-src 'self' https://res.cloudinary.com; form-action 'none'; child-src 'none';">
     <!-- Preload -->
     <link rel="preload" href="/images/banner/aisle-flowers-banner.webp" as="image">
     <link rel="preload" as="script" href="/components/header.js">
     <link rel="preload" as="script" href="/components/banner.js">
+    <link rel="preconnect" href="https://res.cloudinary.com" crossorigin>
     <!-- CSS and Fonts -->
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/home.css">
@@ -54,6 +55,7 @@
     <script src="/components/button.js" type="text/javascript" defer></script>
     <script src="/components/contact.js" type="text/javascript" defer></script>
     <script src="/components/footer.js" type="text/javascript" defer></script>
+    <script src="/components/video.js" type="text/javascript" defer></script>
     <!-- Scripts -->
     <script type="module" src="/scripts/home.js" type="text/javascript" defer></script>
     <script src="/scripts/animation.js" type="text/javascript" defer></script>
@@ -62,7 +64,7 @@
     <header-component class="header"></header-component>
     <main>
         <!-- Banner -->
-        <banner-component id="home-banner" class="home-banner" imageSrc="aisle-flowers" imageAlt="flowers on wedding aisle" text1="Busy Bee Bouquets" text2="floral creations for your special event"></banner-component>
+        <banner-component id="home-banner" class="home-banner" imageSrc="aisle-flowers" imageAlt="floral arrangement on wedding aisle" text1="Busy Bee Bouquets" text2="floral creations for your special event"></banner-component>
         <div class="pink-border"></div>
         <!-- Wedding Floristry -->
         <section class="wedding-floristry-container container">
@@ -73,7 +75,7 @@
                 <div class="wedding-floristry-img-container">
                     <div class="wedding-floristry-img">
                         <div>
-                            <img class="js-scroll slide-left" src="/images/wedding-floristry-img.webp" alt="a bride in a pink dress holding a Busy Bee Bouquets' bouquet">
+                            <img class="js-scroll slide-left" src="/images/wedding-floristry-img.webp" alt="a bride in a pink dress holding a Busy Bee Bouquets bouquet">
                         </div>
                     </div>
                 </div>
@@ -96,6 +98,7 @@
                 <h2>GALLERY</h2>
             </section>
             <div id="gallery-images" class="gallery-images"></div>
+            <video-component class="video"></video-component>
             <button-component link="portfolio" text="VIEW MORE"></button-component>
         </section>
         <!-- Behind the Petals -->

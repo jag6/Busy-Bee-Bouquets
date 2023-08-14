@@ -3,14 +3,14 @@ import { portfolioData } from "./data/portfolio.js";
 document.querySelector('#portfolio-images').innerHTML = `
     ${portfolioData.map((image) => `
         <li class="portfolio-img">
-            <img src="/images/portfolio/${image}.webp" alt="an image from Busy Bee Bouqets portfolio">
+            <img src="/images/portfolio/${image}.webp" alt="an image from Busy Bee Bouquets' portfolio">
         </li>
     `).join('\n')}
 `;
 document.querySelector('#modal-images').innerHTML = `
     ${portfolioData.map((image) => `
         <li class="modal-img">
-            <img src="/images/portfolio/${image}.webp" alt="an image from Busy Bee Bouqets portfolio">
+            <img src="/images/portfolio/${image}.webp" alt="an image from Busy Bee Bouquets' portfolio">
         </li>
     `).join('\n')}
 `;

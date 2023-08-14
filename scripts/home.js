@@ -17,7 +17,7 @@ document.querySelector('#process-steps').innerHTML = `
 document.querySelector('#gallery-images').innerHTML = `
     ${galleryData.map((image) => `
         <div class="js-scroll fade-in-bottom">
-            <img src="/images/gallery/${image}.webp" alt="Busy Bee Bouqets Gallery Photo">
+            <img src="/images/gallery/${image}.webp" alt="Busy Bee Bouquets Gallery Photo">
         </div>
     `).join('\n')}
 `;

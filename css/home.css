@@ -1,5 +1,5 @@
 .pink-border { background-color: #E2B19F; height: 24px; }
-
+.pink-border:first-of-type { margin-top: -4px; }
 
 /*WEDDING FLORISTRY*/
 
@@ -62,6 +62,7 @@
 }
 .gallery-images div { margin-bottom: 2rem; }
 .gallery-images div img { width: 100%; max-width: 480px; }
+.video { display: flex; max-width: 2000px; margin: 0 auto; margin-bottom: 2rem; justify-content: center; }
 
 
 /*BEHIND THE PETALS*/

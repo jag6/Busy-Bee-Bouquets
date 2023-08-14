@@ -69,7 +69,7 @@ header {
     display: flex; flex-direction: row;
     justify-content: space-between; align-items: center;
 }
-.logo { display: flex; }
+.logo { display: flex; height: 88px; }
 .logo img { height: 88px; width: auto; }
 .logo:hover { cursor: pointer; }
 
@@ -181,10 +181,9 @@ header ul li a, footer ul li a {
         padding: 0 0 0 1%;
         height: 56px; 
     }
-    /*fixed with scroll*/ 
     main { padding-top: 56px; }
 
-    .logo img { height: 56px; width: auto; }
+    .logo, .logo img { height: 56px; }
 
     .desktop-nav, .desktop-hf-links { display: none; }
 
@@ -236,9 +235,7 @@ footer a { font-size: 14px; line-height: 32px; color: #B0916A; }
     background-position: center top;
     background-size: cover;
     object-fit: cover;
-    width: 100%;
-    height: 100%;
-    min-height: 672px;
+    width: 100%; height: 100%; min-height: 672px;
 }
 .banner-text {
     position: absolute;
@@ -249,6 +246,7 @@ footer a { font-size: 14px; line-height: 32px; color: #B0916A; }
     top: 15%;
     left: 0; right: 0;
     text-align: center;
+    height: auto;
 }
 .banner-text h1 { 
     font-size: 48px; line-height: 72px;
