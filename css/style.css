@@ -258,6 +258,8 @@ footer a { font-size: 14px; line-height: 32px; color: #B0916A; }
     animation: fade-in 4s ease-in-out; 
 }
 
+.home-banner { position: relative; }
+
 .home-banner h1, .home-banner h2, .portfolio-banner h1, .portfolio-banner h2, .contact-banner h1, .contact-banner h2 { 
     color: #fff; 
 }

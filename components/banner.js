@@ -40,29 +40,3 @@ customElements.define('banner-component', class extends HTMLElement {
         `;
     }
 });
-
-if(document.querySelector('#home-banner')) {
-    //add down arrow to home banner
-    const arrowDiv = document.createElement('div');
-    arrowDiv.classList.add('down-arrow');
-    arrowDiv.innerHTML = `
-        <a href="/#wedding-floristry"><i class="fa-solid fa-arrow-down"></i></a>
-    `;
-    const bannerText = document.querySelector('#banner-text');
-    bannerText.appendChild(arrowDiv);
-
-    //tinker with arrow animation
-    setTimeout(() => {
-        arrowDiv.style.animation = 'pulse 2s infinite ease-in-out'; 
-    }, 6000);
-    arrowDiv.addEventListener('mouseenter', () => {
-        arrowDiv.style.animationDelay = '2s';
-    });
-    window.addEventListener('scroll', () => {
-        if(document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-            arrowDiv.style.animation = 'none';
-        }else {
-            arrowDiv.style.animation = 'pulse 2s infinite ease-in-out'; 
-        }
-    });
-}

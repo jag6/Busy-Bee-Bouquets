@@ -12,7 +12,7 @@
     <!-- Preload -->
     <link rel="preload" href="/images/banner/aisle-flowers-banner.webp" as="image">
     <link rel="preload" as="script" href="/components/header.js">
-    <link rel="preload" as="script" href="/components/banner.js">
+    <link rel="preload" as="script" href="/components/video.js">
     <link rel="preconnect" href="https://res.cloudinary.com" crossorigin>
     <!-- CSS and Fonts -->
     <link rel="stylesheet" href="/css/style.css">
@@ -51,11 +51,10 @@
     <meta property="og:url" content="https://busybeebouquets.com"/>
     <!-- Components -->
     <script src="/components/header.js" type="text/javascript" defer></script>
-    <script src="/components/banner.js" type="text/javascript" defer></script>
+    <script src="/components/video.js" type="text/javascript" defer></script>
     <script src="/components/button.js" type="text/javascript" defer></script>
     <script src="/components/contact.js" type="text/javascript" defer></script>
     <script src="/components/footer.js" type="text/javascript" defer></script>
-    <script src="/components/video.js" type="text/javascript" defer></script>
     <!-- Scripts -->
     <script type="module" src="/scripts/home.js" type="text/javascript" defer></script>
     <script src="/scripts/animation.js" type="text/javascript" defer></script>
@@ -63,9 +62,8 @@
 <body>
     <header-component class="header"></header-component>
     <main>
-        <!-- Banner -->
-        <banner-component id="home-banner" class="home-banner" imageSrc="aisle-flowers" imageAlt="floral arrangement on wedding aisle" text1="Busy Bee Bouquets" text2="floral creations for your special event"></banner-component>
-        <div class="pink-border"></div>
+        <!-- Video -->
+        <video-component class="video home-banner"></video-component>
         <!-- Wedding Floristry -->
         <section class="wedding-floristry-container container">
             <section id="wedding-floristry" class="container-header">
@@ -98,7 +96,6 @@
                 <h2>GALLERY</h2>
             </section>
             <div id="gallery-images" class="gallery-images"></div>
-            <video-component class="video"></video-component>
             <button-component link="portfolio" text="VIEW MORE"></button-component>
         </section>
         <!-- Behind the Petals -->
