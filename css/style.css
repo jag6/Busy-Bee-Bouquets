@@ -579,6 +579,7 @@ video::-webkit-media-controls {
 }
 .contact-links ul li { list-style: none; margin: 2rem;}
 .contact-links ul li a i { color: #B0916A; font-size: 64px; line-height: 64px; }
+.contact-links ul li a:hover { opacity: .7; transition: .1s ease-in-out; }
 .contact-text div:nth-child(1) { margin-bottom: 2rem; }
 .contact-text div p { font-size: 32px; line-height: 64px; text-align: center;}
 
