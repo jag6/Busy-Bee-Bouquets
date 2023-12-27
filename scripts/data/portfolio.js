@@ -1,12 +1,9 @@
 export const portfolioData = [
-    'madi-head-turned-pink-flowers',
     'white-flowers-close-up',
     'pink-flowers-table',
     'white-flowers-lighting-candles',
     '1-2 1',
     '1-208 1',
-    '1-223 1',
-    '1-226 1',
     '1-326 1',
     '1-344 1',
     '1-37 1',

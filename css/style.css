@@ -251,7 +251,8 @@ footer a { font-size: 14px; line-height: 32px; color: #B0916A; }
     display: flex; flex-direction: column; 
     margin: 0 auto;
     max-width: 2000px;
-    position: relative; }
+    position: relative; 
+}
 .banner img {
     background-repeat: no-repeat;
     background-position: center top;
@@ -282,7 +283,7 @@ footer a { font-size: 14px; line-height: 32px; color: #B0916A; }
 
 .home-banner { position: relative; }
 
-.home-banner h1, .home-banner h2, .portfolio-banner h1, .portfolio-banner h2, .contact-banner h1, .contact-banner h2 { 
+.home-banner h1, .home-banner h2, .portfolio-banner h1, .portfolio-banner h2 { 
     color: #fff; 
 }
 .home-banner h1 { 
@@ -290,17 +291,6 @@ footer a { font-size: 14px; line-height: 32px; color: #B0916A; }
     font-family: 'Rastanty Cortez', sans-serif !important;
 }
 .home-banner h2 { font-family: 'WalbaumDisplay Regular', serif; }
-.down-arrow { 
-    display: flex; 
-    margin: 0 auto; margin-top: 2rem;
-    justify-content: center; align-items: center;
-    width: 144px; height: 144px;
-    border-radius: 50%;
-    font-size: 120px; line-height: 120px;
-    animation: pulse-with-opacity 8s infinite ease-in-out; 
-    box-shadow: 0px 0px 1px 1px #0000000a;
-}
-.down-arrow a { color: #fff; }
 
 .about-banner h1, .portfolio-banner h1, .contact-banner h1 { font-weight: 400; }
 
@@ -309,19 +299,44 @@ footer a { font-size: 14px; line-height: 32px; color: #B0916A; }
 
 .portfolio-banner .banner-text { top: 20%;  right: 45%; }
 
-.contact-banner .banner-text { top: 30%; left: 30%; }
+.contact-banner {
+    display: flex; flex-flow: row wrap;
+    margin: 0 auto; padding: 2rem 2% 0 2%;
+    max-width: 1440px;
+    justify-content: space-between; align-items: center;
+}
+.contact-banner-img, .contact-banner .banner-text { width: 50%; display: flex; margin: 0 auto; justify-content: center ;}
+.contact-banner-img img { 
+    max-width: 480px; height: 672px;  
+    background-color: rgba(214, 144, 118, .4);
+    padding: 5%;
+}
+.contact-banner-img img:nth-child(2) { display: none; }
+.contact-banner .banner-text {
+    position: static;
+    padding: 0;
+}
+.contact-banner h1, .contact-banner h2 { color: #B0916A; }
 
 @media only screen and (min-width: 1800px) {
     .portfolio-banner .banner-text { top: 25%;  right: 30%; }
-    .contact-banner .banner-text { right: 5%; }
 }
 @media only screen and (max-width: 1100px) {
-    .portfolio-banner .banner-text, .contact-banner .banner-text {
-        left: 0;
-    }
+    .portfolio-banner .banner-text { left: 0; }
 }
 @media only screen and (max-width: 1000px) {
     .portfolio-banner .banner-text { top: 10%;  right: 40%; }
+    .contact-banner { flex-direction: column; position: relative; }
+    .contact-banner-img, .contact-banner .banner-text { width: 100%; }
+    .contact-banner-img img:nth-child(1) { display: none; }
+    .contact-banner-img img:nth-child(2) { display: block; }
+    .contact-banner-img img { max-width: 100%; width: 98% !important; height: auto; }
+    .contact-banner .banner-text {
+        position: absolute;
+        margin: 0;
+        top: 0; left: 0; right: 0; bottom: 0;
+    }
+    .contact-banner h1, .contact-banner h2 { color: #fff; }
 }
 @media only screen and (max-width: 900px) {
     .about-banner .banner img { object-position: 30% 100%; }
@@ -333,6 +348,9 @@ footer a { font-size: 14px; line-height: 32px; color: #B0916A; }
     .about-banner .banner-text { left: 0; }
     .about-banner h1, .about-banner h2 { color: #fff; }
     .portfolio-banner .banner-text { top: 25%;  right: 0; }
+    .contact-banner .banner-text { height: auto; }
+    .contact-banner .banner-text section { margin: 0 auto; max-width: 300px; }
+    .contact-banner h2 { display: none; }
 }
 
 
@@ -605,7 +623,7 @@ video::-webkit-media-controls {
 .contact-text div:nth-child(1) { margin-bottom: 2rem; }
 .contact-text div p { font-size: 32px; line-height: 64px; text-align: center;}
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 850px) {
     .contact-links, .contact-text { width: 100%; }
     .contact-links ul { max-width: 100%; }
     .contact-text { margin-top: 2rem; }
