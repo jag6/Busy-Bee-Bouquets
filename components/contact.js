@@ -52,10 +52,10 @@ customElements.define('contactlinks-component', class extends HTMLElement {
 
         this.innerHTML = `
             <ul>
-                <li><a href="https://www.instagram.com/busy_bee_bouquets/"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="https://api.whatsapp.com/send?phone=18055039770"><i class="fa-brands fa-whatsapp"></i></a></li>
-                <li><a href="tel:+18055039770"><i class="fa-solid fa-mobile-screen-button"></i></a></li>
-                <li><a href="mailto:blasingamebusiness@gmail.com"><i class="fa-regular fa-envelope"></i></a></li>
+                <li><a href="https://www.instagram.com/busy_bee_bouquets/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://api.whatsapp.com/send?phone=18055039770" aria-label="Whatsapp"><i class="fa-brands fa-whatsapp"></i></a></li>
+                <li><a href="tel:+18055039770"><i class="fa-solid fa-mobile-screen-button" aria-label="Phone"></i></a></li>
+                <li><a href="mailto:blasingamebusiness@gmail.com"><i class="fa-regular fa-envelope" aria-label="Email"></i></a></li>
             </ul>
         `;
     }
