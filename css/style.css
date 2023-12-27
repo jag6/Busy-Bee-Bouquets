@@ -4,6 +4,23 @@
     border: none;
 }
 
+@font-face {
+    font-family: 'Rastanty Cortez';
+    src: 
+        url('./fonts/rastanty_cortez-webfont.woff') format('woff'),
+        url('./fonts/Rastanty-Cortez.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'WalbaumDisplay Regular';
+    src: 
+        url('./fonts/WalbaumDisplay-Regular.ttf') format('truetype'),
+        url('./fonts/walbaumdisplay_regular-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -100,6 +117,7 @@ header ul li a, footer ul li a {
     cursor: pointer; 
     height: 56px; width: 56px; 
     padding-top: 8px; 
+    background-color: transparent;
     overflow: hidden; 
 }
   
@@ -229,7 +247,11 @@ footer a { font-size: 14px; line-height: 32px; color: #B0916A; }
 
 /*BANNER*/
 
-.banner { display: flex; flex-direction: column; position: relative; }
+.banner { 
+    display: flex; flex-direction: column; 
+    margin: 0 auto;
+    max-width: 2000px;
+    position: relative; }
 .banner img {
     background-repeat: no-repeat;
     background-position: center top;
@@ -265,9 +287,9 @@ footer a { font-size: 14px; line-height: 32px; color: #B0916A; }
 }
 .home-banner h1 { 
     font-size: 64px; line-height: 80px;
-    font-weight: 500; font-style: italic;  
+    font-family: 'Rastanty Cortez', sans-serif !important;
 }
-.home-banner h2 { font-family: 'Dancing Script'; font-weight: 400; }
+.home-banner h2 { font-family: 'WalbaumDisplay Regular', serif; }
 .down-arrow { 
     display: flex; 
     margin: 0 auto; margin-top: 2rem;
@@ -380,13 +402,13 @@ video::-webkit-media-controls {
 .js-scroll { opacity: 0; transition: opacity 500ms; }
 .js-scroll.scrolled { opacity: 1; }
 
-.scrolled.fade-in { animation: fade-in 1s ease-in-out both; }
-.scrolled.fade-in-bottom { animation: fade-in-bottom 1s ease-in-out both; }
-.scrolled.fade-in-bottom2 { animation: fade-in-bottom2 1s ease-in-out both; }
-.scrolled.fade-in-bottom3 { animation: fade-in-bottom3 1s ease-in-out both; }
-.scrolled.slide-left { animation: slide-in-left 1s ease-in-out both; }
-.scrolled.slide-right { animation: slide-in-right 1s ease-in-out both; }
-.scrolled.turn { transform: rotate(1turn); transition: 1s; }
+.scrolled.fade-in { animation: fade-in .5s ease-in-out both; }
+.scrolled.fade-in-bottom { animation: fade-in-bottom .5s ease-in-out both; }
+.scrolled.fade-in-bottom2 { animation: fade-in-bottom2 .5s ease-in-out both; }
+.scrolled.fade-in-bottom3 { animation: fade-in-bottom3 .5s ease-in-out both; }
+.scrolled.slide-left { animation: slide-in-left .5s ease-in-out both; }
+.scrolled.slide-right { animation: slide-in-right .5s ease-in-out both; }
+.scrolled.turn { transform: rotate(1turn); transition: .5s; }
 
 @keyframes fade-in {
     0% {

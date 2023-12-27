@@ -9,7 +9,7 @@ customElements.define('video-component', class extends HTMLElement {
             </video>
             <section id="banner-text" class="banner-text">
                 <section><h1>Busy Bee Bouquets</h1></section>
-                <section><h2>floral creations for your special event</h2></section>
+                <section><h2>Hudson Valley Wedding Florist Studio</h2></section>
             </section>
         `;
     }

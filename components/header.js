@@ -13,7 +13,7 @@ customElements.define('header-component', class extends HTMLElement {
                     <nav-component></nav-component>
                 </nav>
                 <hflinks-component class="desktop-hf-links"></hflinks-component>
-                <div id="hamburger-icon" class="hamburger-icon">
+                <button id="hamburger-icon" class="hamburger-icon" aria-label="Open Nav Menu" aria-expanded="false">
                     <div id="hi-inner" class="hi-inner">
                         <span class="one"></span>
                         <span class="two">
@@ -22,7 +22,7 @@ customElements.define('header-component', class extends HTMLElement {
                         </span>
                         <span class="three"></span>
                     </div>
-                </div>
+                </button>
                 <div id="nav-overlay" class="nav-overlay">
                     <div id="mobile-nav" class="mobile-nav">
                         <nav>
@@ -42,6 +42,8 @@ customElements.define('header-component', class extends HTMLElement {
 
         //remove nav menu
         const clickOff = () => {
+            hamburgerIcon.ariaLabel = 'Open Nav Menu';
+            hamburgerIcon.ariaExpanded = 'False';
             nav_overlay.style.display = 'none';
             mobile_nav.style.width = '0%';
             body.style.overflow = 'auto';
@@ -52,6 +54,8 @@ customElements.define('header-component', class extends HTMLElement {
             if(mobile_nav.style.width === '300px') {
                 clickOff();
             }else {
+                hamburgerIcon.ariaLabel = 'Close Nav Menu';
+                hamburgerIcon.ariaExpanded = 'True';
                 mobile_nav.style.width = '300px';
                 nav_overlay.style.display = 'flex';
                 body.style.overflow = 'hidden';
@@ -90,7 +94,7 @@ customElements.define('hflinks-component', class extends HTMLElement {
             <ul class="hf-links">
                 <li><a aria-label="link to Busy Bee Bouquets Instagram" href="https://www.instagram.com/busy_bee_bouquets/"><i class="fa-brands fa-instagram"></i></a></li>
                 <li><a aria-label="Busy Bee Bouquets phone number" href="tel:+18055039770"><i class="fa-solid fa-mobile-screen-button"></i></a></li>
-                <li><a aria-label="Busy Bee Bouquets email" href="mailto:avilamaddy@gmail.com"><i class="fa-regular fa-envelope"></i></a></li>
+                <li><a aria-label="Busy Bee Bouquets email" href="mailto:blasingamebusiness@gmail.com"><i class="fa-regular fa-envelope"></i></a></li>
             </ul>
         `;
     }

@@ -3,10 +3,10 @@ export const ourProcessData = [
         imageSrc: 'form', imageAlt: 'form', title: 'INQUIRY', description: 'Reach out to us via your preferred contact method to help us understand your event in better detail. We’ll look it over and provide a detailed proposal based on the info you submit.'
     }, 
     {
-        imageSrc: 'calendar', imageAlt: 'calendar', title: 'BOOKING', description: 'Once you approve of our custom proposal, we’ll ink the date on our calendar with a 20% deposit.'
+        imageSrc: 'calendar', imageAlt: 'calendar', title: 'BOOKING', description: 'Once you approve of our custom proposal, we’ll ink the date on our calendar with a 50% deposit.'
     }, 
     {
-        imageSrc: 'railway-track', imageAlt: 'railway track', title: 'PLANNING', description: 'We’ll work alongside you and or your wedding planner to ensure we stay on track and bring your flora vision to life in a timely manner.'
+        imageSrc: 'railway-track', imageAlt: 'railway track', title: 'PLANNING', description: 'We’ll work alongside you and or your wedding planner to ensure we stay on track and bring your floral vision to life in a timely manner.'
     }, 
     {
         imageSrc: 'chat-bubble', imageAlt: 'chat bubble', title: 'FINALIZATION', description: 'One month before the wedding, we’ll re-connect virtually to confirm final numbers, design, and settle final payment.'
@@ -28,12 +28,12 @@ export const galleryData = [
 
 export const faqData = [
     {
-        imageSrc: '1', question: 'What is your wedding minimum?', answer: 'Our full service wedding minimum is $6,000. Our average client spends between $6-8K.'
+        imageSrc: '1', question: 'What is your wedding minimum?', answer: 'Our full service wedding minimum is $6,000.'
     }, 
     {
-        imageSrc: '2', question: 'How far will you travel?', answer: 'We service New York City and the upper Hudson Valley. For surrounding areas a travel fee may apply. Not in either of these areas? No problem. Ask about a destination wedding event.'
+        imageSrc: '2', question: 'How far will you travel?', answer: 'We service New York City and the Hudson Valley. For surrounding areas a travel fee may apply. Not in either of these areas? No problem. Ask about a destination wedding event.'
     }, 
     {
-        imageSrc: '3', question: 'Do you do elopements for micro weddings?', answer: 'We can take smaller “a la carte” orders based on availability. Only as early as two-months before your wedding may you inquire.'
+        imageSrc: '3', question: 'Do you do elopements for micro weddings?', answer: 'We can take smaller “a la carte” orders based on availability. You may inquire up to two months before your wedding date.'
     }, 
 ];
