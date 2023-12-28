@@ -276,7 +276,7 @@ footer a { font-size: 14px; line-height: 32px; color: #B0916A; }
     animation: fade-in 1s ease-in-out; 
 }
 .banner-text h2 { 
-    font-family: 'Maven Pro'; font-weight: 500; 
+    font-family: 'Rastanty Cortez', serif; font-weight: 500; 
     font-size: 32px; line-height: 56px;
     animation: fade-in 4s ease-in-out; 
 }
@@ -328,15 +328,13 @@ footer a { font-size: 14px; line-height: 32px; color: #B0916A; }
     .portfolio-banner .banner-text { top: 10%;  right: 40%; }
     .contact-banner { flex-direction: column; position: relative; }
     .contact-banner-img, .contact-banner .banner-text { width: 100%; }
-    .contact-banner-img img:nth-child(1) { display: none; }
-    .contact-banner-img img:nth-child(2) { display: block; }
     .contact-banner-img img { max-width: 100%; width: 98% !important; height: auto; }
     .contact-banner .banner-text {
         position: absolute;
         margin: 0;
-        top: 0; left: 0; right: 0; bottom: 0;
+        top: 15%;
     }
-    .contact-banner h1, .contact-banner h2 { color: #fff; }
+    .contact-banner .banner-text section:nth-child(2) { display: none; }
 }
 @media only screen and (max-width: 900px) {
     .about-banner .banner img { object-position: 30% 100%; }
@@ -348,9 +346,9 @@ footer a { font-size: 14px; line-height: 32px; color: #B0916A; }
     .about-banner .banner-text { left: 0; }
     .about-banner h1, .about-banner h2 { color: #fff; }
     .portfolio-banner .banner-text { top: 25%;  right: 0; }
-    .contact-banner .banner-text { height: auto; }
+    .contact-banner .banner-text { height: auto; top: 12%; }
     .contact-banner .banner-text section { margin: 0 auto; max-width: 300px; }
-    .contact-banner h2 { display: none; }
+    .contact-banner .banner-text h1 { font-size: 30px; line-height: 48px; }
 }
 
 

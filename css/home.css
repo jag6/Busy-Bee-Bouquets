@@ -73,7 +73,7 @@
 }
 .btp-img, .btp-text { width: 50%; }
 .btp-img img { width: auto; height: 600px;}
-.btp-text h3 { font-family: 'Maven Pro'; font-weight: 500; }
+.btp-text h3 { font-family: 'Rastanty Cortez', serif; font-weight: 500; }
 .btp-text div { display: flex; margin: 2rem auto; justify-content: center;}
 .btp-text div p { 
     width: 400px; 
