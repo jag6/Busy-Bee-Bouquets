@@ -276,8 +276,8 @@ footer a { font-size: 14px; line-height: 32px; color: #B0916A; }
     animation: fade-in 1s ease-in-out; 
 }
 .banner-text h2 { 
-    font-family: 'Rastanty Cortez', serif; font-weight: 500; 
-    font-size: 32px; line-height: 56px;
+    font-family: 'Rastanty Cortez', serif;
+    font-size: 48px; line-height: 56px;
     animation: fade-in 4s ease-in-out; 
 }
 
@@ -290,7 +290,7 @@ footer a { font-size: 14px; line-height: 32px; color: #B0916A; }
     font-size: 64px; line-height: 80px;
     font-family: 'Rastanty Cortez', sans-serif !important;
 }
-.home-banner h2 { font-family: 'WalbaumDisplay Regular', serif; }
+.home-banner h2 { font-family: 'WalbaumDisplay Regular', serif; font-size: 32px; }
 
 .about-banner h1, .portfolio-banner h1, .contact-banner h1 { font-weight: 400; }
 
@@ -311,7 +311,6 @@ footer a { font-size: 14px; line-height: 32px; color: #B0916A; }
     background-color: rgba(214, 144, 118, .4);
     padding: 5%;
 }
-.contact-banner-img img:nth-child(2) { display: none; }
 .contact-banner .banner-text {
     position: static;
     padding: 0;
@@ -341,6 +340,7 @@ footer a { font-size: 14px; line-height: 32px; color: #B0916A; }
 }
 @media only screen and (max-width: 576px) {
     .banner-text { height: 672px; }
+    .banner-text h2 { font-size: 32px; }
     .home-banner h1 { font-size: 32px; line-height: 64px; }
     .home-banner h2 { font-size: 20px; line-height: 40px; }
     .about-banner .banner-text { left: 0; }
