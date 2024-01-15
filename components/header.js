@@ -94,7 +94,7 @@ customElements.define('hflinks-component', class extends HTMLElement {
             <ul class="hf-links">
                 <li><a aria-label="link to Busy Bee Bouquets Instagram" href="https://www.instagram.com/busy_bee_bouquets/"><i class="fa-brands fa-instagram"></i></a></li>
                 <li><a aria-label="Busy Bee Bouquets phone number" href="tel:+18055039770"><i class="fa-solid fa-mobile-screen-button"></i></a></li>
-                <li><a aria-label="Busy Bee Bouquets email" href="mailto:blasingamebusiness@gmail.com"><i class="fa-regular fa-envelope"></i></a></li>
+                <li><a aria-label="Busy Bee Bouquets email" href="mailto:blasingamebusiness&commat;gmail&period;com"><i class="fa-regular fa-envelope"></i></a></li>
             </ul>
         `;
     }

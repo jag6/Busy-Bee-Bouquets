@@ -620,7 +620,15 @@ video::-webkit-media-controls {
 .contact-links ul li a:hover { opacity: .7; transition: .1s ease-in-out; }
 .contact-text div:nth-child(1) { margin-bottom: 2rem; }
 .contact-text div p { font-size: 32px; line-height: 64px; text-align: center;}
+.contact-email { font-family: 'Montserrat', sans-serif; color: #8A7253; border-bottom: 2px #8A7253 solid; }
 
+.remove-email:nth-child(1) { display: none; }
+
+@media only screen and (max-width: 1200px) {
+    .remove-at { display: none; }
+    .remove-email:nth-child(1) { display: contents; }
+    .remove-email:nth-child(2) { display: none;}
+}
 @media only screen and (max-width: 850px) {
     .contact-links, .contact-text { width: 100%; }
     .contact-links ul { max-width: 100%; }
