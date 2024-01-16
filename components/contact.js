@@ -69,12 +69,3 @@ customElements.define('email-component', class extends HTMLElement {
         `;
     }
 });
-customElements.define('removeat-component', class extends HTMLElement {
-    constructor() {
-        super();
-        
-        this.innerHTML = `
-            <span>at</span>
-        `;
-    }
-});

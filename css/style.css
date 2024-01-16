@@ -623,9 +623,11 @@ video::-webkit-media-controls {
 .contact-email { font-family: 'Montserrat', sans-serif; color: #8A7253; border-bottom: 2px #8A7253 solid; }
 
 .remove-email:nth-child(1) { display: none; }
+.remove-at:nth-child(1) { display: none; }
 
 @media only screen and (max-width: 1200px) {
-    .remove-at { display: none; }
+    .remove-at:nth-child(1) { display: contents; }
+    .remove-at:nth-child(2) { display: none; }
     .remove-email:nth-child(1) { display: contents; }
     .remove-email:nth-child(2) { display: none;}
 }
