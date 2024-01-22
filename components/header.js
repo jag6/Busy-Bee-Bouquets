@@ -13,7 +13,7 @@ customElements.define('header-component', class extends HTMLElement {
                     <nav-component></nav-component>
                 </nav>
                 <hflinks-component class="desktop-hf-links"></hflinks-component>
-                <button id="hamburger-icon" class="hamburger-icon" aria-label="Open Nav Menu" aria-expanded="false">
+                <button id="hamburger-icon" class="hamburger-icon" aria-label="Open Nav Menu" aria-expanded="false" type="button">
                     <div id="hi-inner" class="hi-inner">
                         <span class="one"></span>
                         <span class="two">
