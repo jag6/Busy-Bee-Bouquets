@@ -597,6 +597,10 @@ video::-webkit-media-controls {
 
 @media only screen and (max-width: 576px) {
     .portfolio-images { display: flex; flex-direction: column; }
+    .portfolio-images li { display: flex; margin: 0 auto 1rem auto; justify-content: center; }
+    .modal-img img {
+        max-width: 100vw; height: auto;
+    }
 }
 
 
