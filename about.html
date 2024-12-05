@@ -12,7 +12,6 @@
     <!-- Preload -->
     <link rel="preload" href="/images/banner/evhan-madi-banner.webp" as="image">
     <link rel="preload" as="script" href="/components/header.js">
-    <link rel="preload" as="script" href="/components/banner.js">
     <!-- CSS and Fonts -->
     <link rel="stylesheet" href="/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -47,7 +46,6 @@
     <meta property="og:url" content="https://busybeebouquets.com/about"/>
     <!-- Components -->
     <script src="/components/header.js" type="text/javascript" defer></script>
-    <script src="/components/banner.js" type="text/javascript" defer></script>
     <script src="/components/pinkcontact.js" type="text/javascript" defer></script>
     <script src="/components/footer.js" type="text/javascript" defer></script>
     <!-- Scripts -->
@@ -57,7 +55,15 @@
     <header-component class="header"></header-component>
     <main>
         <!-- Banner -->
-        <banner-component class="about-banner" imageSrc="evhan-madi" imageAlt="Busy Bee Bouqets owner Madi Blasingame with her husband Evhan at the beach" text1="BEHIND THE PETALS" text2="-Meet the Designer-"></banner-component>
+        <section class="banner about-banner">
+            <div class="banner-img">
+                <img src="/images/banner/evhan-madi-banner.webp" alt="Busy Bee Bouqets owner Madi Blasingame with her husband Evhan at the beach">
+            </div>
+            <section id="banner-text" class="banner-text">
+                <section><h1>BEHIND THE PETALS</h1></section>
+                <section><h2>-Meet the Designer-</h2></section>
+            </section>
+        </section>
         <!-- About Content -->
         <section class="about-container container">
             <section class="container-header">

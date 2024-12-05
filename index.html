@@ -11,7 +11,6 @@
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; style-src 'self' https://fonts.googleapis.com https://cdnjs.cloudflare.com; script-src 'self'; base-uri 'none'; frame-src 'none'; media-src 'self' https://res.cloudinary.com; form-action 'none'; child-src 'none';">
     <!-- Preload -->
     <link rel="preload" as="script" href="/components/header.js">
-    <link rel="preload" as="script" href="/components/video.js">
     <link rel="preconnect" href="https://res.cloudinary.com" crossorigin>
     <!-- CSS and Fonts -->
     <link rel="stylesheet" href="/css/style.css">
@@ -48,7 +47,6 @@
     <meta property="og:url" content="https://busybeebouquets.com"/>
     <!-- Components -->
     <script src="/components/header.js" type="text/javascript" defer></script>
-    <script src="/components/video.js" type="text/javascript" defer></script>
     <script src="/components/button.js" type="text/javascript" defer></script>
     <script src="/components/contact.js" type="text/javascript" defer></script>
     <script src="/components/footer.js" type="text/javascript" defer></script>
@@ -60,7 +58,16 @@
     <header-component class="header"></header-component>
     <main>
         <!-- Video -->
-        <video-component class="video home-banner"></video-component>
+        <section class="video home-banner">
+            <video controls autoplay loop muted width="100%" height="100%" poster="/images/thumbnail/busy-bee-bouquets-thumbnail.webp">
+                <source src="https://res.cloudinary.com/dny2bkqkg/video/upload/v1691419089/Busy%20Bee%20Bouquets/ars_workshop_2022-busy_bee_bouquets_v1-_1080p_udgcds.mp4" type="video/webm">
+                <source src="https://res.cloudinary.com/dny2bkqkg/video/upload/v1691419089/Busy%20Bee%20Bouquets/ars_workshop_2022-busy_bee_bouquets_v1-_1080p_udgcds.mp4" type="video/mp4">
+            </video>
+            <section id="banner-text" class="banner-text">
+                <section><h1>Busy Bee Bouquets</h1></section>
+                <section><h2>Hudson Valley Wedding Florist Studio</h2></section>
+            </section>
+        </section>
         <!-- Wedding Floristry -->
         <section class="wedding-floristry-container container">
             <section id="wedding-floristry" class="container-header">

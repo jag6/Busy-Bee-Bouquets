@@ -12,7 +12,6 @@
     <!-- Preload -->
     <link rel="preload" href="/images/banner/sorry-banner.webp" as="image">
     <link rel="preload" as="script" href="/components/header.js">
-    <link rel="preload" as="script" href="/components/banner.js">
     <!-- CSS and Fonts -->
     <link rel="stylesheet" href="/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,13 +32,20 @@
     <meta name="description" content="Sorry, the page you're looking for doesn't exist.">
     <!-- Components -->
     <script src="/components/header.js" type="text/javascript" defer></script>
-    <script src="/components/banner.js" type="text/javascript" defer></script>
     <script src="/components/footer.js" type="text/javascript" defer></script>
 </head>
 <body>
     <header-component class="header"></header-component>
     <main>
-        <banner-component id="sorry-banner" class="sorry-banner" imageSrc="sorry" imageAlt="sad child" text1="SORRY!" text2="The page doesn't exist"></banner-component>
+        <section id="sorry-banner" class="banner sorry-banner">
+            <div class="banner-img">
+                <img src="/images/banner/sorry-banner.webp" alt="sad child">
+            </div>
+            <section id="banner-text" class="banner-text">
+                <section><h1>SORRY!</h1></section>
+                <section><h2>The page doesn't exist</h2></section>
+            </section>
+        </section>
         <div class="sorry-text container">
             <p>The page you’re looking for doesn’t exist.<br>Please click on any of the links at the top to go back to the main site.<br><br>Thank you!</p>
         </div>

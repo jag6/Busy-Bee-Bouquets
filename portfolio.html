@@ -12,7 +12,6 @@
     <!-- Preload -->
     <link rel="preload" href="/images/banner/madi-table-flowers-banner.webp" as="image">
     <link rel="preload" as="script" href="/components/header.js">
-    <link rel="preload" as="script" href="/components/banner.js">
     <!-- CSS and Fonts -->
     <link rel="stylesheet" href="/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -47,7 +46,6 @@
     <meta property="og:url" content="https://busybeebouquets.com/portfolio"/>
     <!-- Components -->
     <script src="/components/header.js" type="text/javascript" defer></script>
-    <script src="/components/banner.js" type="text/javascript" defer></script>
     <script src="/components/pinkcontact.js" type="text/javascript" defer></script>
     <script src="/components/footer.js" type="text/javascript" defer></script>
     <!-- Scripts -->
@@ -57,7 +55,15 @@
     <header-component class="header"></header-component>
     <main>
         <!-- Banner -->
-        <banner-component class="portfolio-banner" imageSrc="madi-table-flowers" imageAlt="Busy Bee Bouqets owner Madi Blasingame setting up a floral arrangement on a table" text1="PORTFOLIO" text2="- A collection of warmth, style, <br>and romance -"></banner-component>
+        <section class="banner portfolio-banner">
+            <div class="banner-img">
+                <img src="/images/banner/madi-table-flowers-banner.webp" alt="Busy Bee Bouqets owner Madi Blasingame setting up a floral arrangement on a table">
+            </div>
+            <section id="banner-text" class="banner-text">
+                <section><h1>PORTFOLIO</h1></section>
+                <section><h2>- A collection of warmth, style, <br>and romance -</h2></section>
+            </section>
+        </section>
         <!-- portfolio Content -->
         <section class="portfolio-container container">
             <section class="container-header">
