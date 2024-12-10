@@ -53,6 +53,7 @@ customElements.define('contactlinks-component', class extends HTMLElement {
         this.innerHTML = `
             <ul>
                 <li><a href="https://www.instagram.com/busy_bee_bouquets/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.pinterest.com/BusyBeeBouquets/_saved/" aria-label="link to Busy Bee Bouquets Pinterest" ><i class="fa-brands fa-pinterest"></i></a></li>
                 <li><a href="https://api.whatsapp.com/send?phone=18055039770" aria-label="Whatsapp"><i class="fa-brands fa-whatsapp"></i></a></li>
                 <li><a href="tel:+18055039770"><i class="fa-solid fa-mobile-screen-button" aria-label="Phone"></i></a></li>
                 <li><a href="mailto:blasingamebusiness&commat;gmail&period;com"><i class="fa-regular fa-envelope" aria-label="Email"></i></a></li>

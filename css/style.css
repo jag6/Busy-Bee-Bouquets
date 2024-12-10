@@ -616,7 +616,7 @@ video::-webkit-media-controls {
 .contact-links, .contact-text { width: 50%; }
 .contact-links ul { 
     display: flex; flex-flow: row wrap; 
-    margin: 0 auto; justify-content: center;
+    margin: 0 auto; justify-content: center; max-width: 450px;
 }
 .contact-links ul li { list-style: none; margin: 2rem;}
 .contact-links ul li a i { color: #B0916A; font-size: 64px; line-height: 64px; }
