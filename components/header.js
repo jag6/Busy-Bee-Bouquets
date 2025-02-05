@@ -6,7 +6,7 @@ customElements.define('header-component', class extends HTMLElement {
             <header>
                 <div class="logo">
                     <a href="/">
-                        <img src="images/BBB-logo.png" alt="Busy Bee Bouqets logo">
+                        <img src="images/new_logo.jpg" alt="Busy Bee Bouquets' logo">
                     </a>
                 </div>
                 <nav class="desktop-nav">
